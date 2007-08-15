@@ -3,7 +3,7 @@
 %define	name		perl-%{realname}
 
 %define	realversion	1.02
-%define	version		1.02
+%define	version		1.03
 
 %define	release		%mkrel 1
 
