@@ -31,7 +31,6 @@ BuildRequires:	perl(YAML) >= 0.55
 Requires:	perl >= 5.8.1
 Requires:	perl-Catalyst >= 5.7000
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Catalyst is an elegant web application framework, extremely flexible yet
