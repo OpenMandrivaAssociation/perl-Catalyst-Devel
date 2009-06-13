@@ -5,7 +5,7 @@
 %define	realversion	1.02
 %define	version		1.18
 
-%define	release		%mkrel 1
+%define	release		%mkrel 2
 
 Summary:	Catalyst Development Tools
 Name:		%{name}
