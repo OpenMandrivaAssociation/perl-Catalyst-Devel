@@ -15,10 +15,11 @@ License:	Artistic/GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{realname}/
 Source:		http://www.cpan.org/modules/by-module/%{modprefix}/%{realname}-%{realversion}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel >= 5.8.1
 %endif
-BuildRequires:	perl(Catalyst) >= 5.7000
+BuildRequires:	perl(Catalyst)
 BuildRequires:	perl(Catalyst::Action::RenderView) >= 0.04
 BuildRequires:	perl(Catalyst::Plugin::ConfigLoader)
 BuildRequires:	perl(Catalyst::Plugin::Static::Simple) >= 0.14
@@ -29,7 +30,6 @@ BuildRequires:	perl(Path::Class) >= 0.09
 BuildRequires:	perl(Template) >= 2.14
 BuildRequires:	perl(YAML) >= 0.55
 Requires:	perl >= 5.8.1
-Requires:	perl-Catalyst >= 5.7000
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-buildroot
 
