@@ -3,9 +3,9 @@
 %define	name		perl-%{realname}
 
 %define	realversion	1.02
-%define	version		1.18
+%define	version		1.19
 
-%define	release		%mkrel 2
+%define	release		%mkrel 1
 
 Summary:	Catalyst Development Tools
 Name:		%{name}
