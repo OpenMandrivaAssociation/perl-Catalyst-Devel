@@ -1,20 +1,15 @@
-%define	realname	Catalyst-Devel
-%define	modprefix	Catalyst
-%define	name		perl-%{realname}
+%define	upstream_name	 Catalyst-Devel
+%define	upstream_version 1.19
 
-%define	realversion	1.02
-%define	version		1.19
-
-%define	release		%mkrel 1
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
 
 Summary:	Catalyst Development Tools
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{realname}/
-Source:		http://www.cpan.org/modules/by-module/%{modprefix}/%{realname}-%{realversion}.tar.bz2
+URL:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel >= 5.8.1
@@ -31,7 +26,7 @@ BuildRequires:	perl(Template) >= 2.14
 BuildRequires:	perl(YAML) >= 0.55
 Requires:	perl >= 5.8.1
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-buildroot
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Catalyst is an elegant web application framework, extremely flexible yet
@@ -42,9 +37,11 @@ This package provides Catalyst development tools.
 
 
 %prep
-%setup -q -n %{realname}-%{realversion}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
+# jq - should be removed when 5.10.1 is out
+export CATALYST_DEVEL_NO_510_CHECK=1
 %{__perl} Makefile.PL INSTALLDIRS=vendor < /dev/null
 %__make
 
@@ -58,7 +55,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc Changes
-%{perl_vendorlib}/%{modprefix}*
+%{perl_vendorlib}/Catalyst*
 %{perl_vendorlib}/Module
 %{_mandir}/*/*
 
