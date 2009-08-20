@@ -1,5 +1,5 @@
 %define	upstream_name	 Catalyst-Devel
-%define	upstream_version 1.19
+%define	upstream_version 1.20
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -52,14 +52,12 @@ export CATALYST_DEVEL_NO_510_CHECK=1
 rm -rf %{buildroot}
 %makeinstall_std
 
+%clean
+rm -rf %{buildroot}
+
 %files
 %defattr(-,root,root)
 %doc Changes
 %{perl_vendorlib}/Catalyst*
 %{perl_vendorlib}/Module
 %{_mandir}/*/*
-
-%clean
-rm -rf %{buildroot}
-
-
