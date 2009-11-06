@@ -19,6 +19,8 @@ BuildRequires:	perl(Catalyst::Action::RenderView) >= 0.04
 BuildRequires:	perl(Catalyst::Plugin::ConfigLoader)
 BuildRequires:	perl(Catalyst::Plugin::Static::Simple) >= 0.14
 BuildRequires:	perl(Class::Accessor::Fast)
+BuildRequires:	perl(Config::General)
+BuildRequires:	perl(File::ChangeNotify)
 BuildRequires:	perl(File::Copy::Recursive)
 BuildRequires:	perl(Module::Install) >= 0.64
 BuildRequires:	perl(Path::Class) >= 0.09
