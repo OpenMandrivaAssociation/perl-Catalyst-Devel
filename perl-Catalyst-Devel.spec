@@ -1,5 +1,5 @@
 %define	upstream_name	 Catalyst-Devel
-%define upstream_version 1.21
+%define upstream_version 1.24
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -60,6 +60,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc Changes
+%{perl_vendorlib}/auto
 %{perl_vendorlib}/Catalyst*
 %{perl_vendorlib}/Module
 %{_mandir}/*/*
