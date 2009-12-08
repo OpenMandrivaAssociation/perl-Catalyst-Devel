@@ -22,13 +22,17 @@ BuildRequires:	perl(Class::Accessor::Fast)
 BuildRequires:	perl(Config::General)
 BuildRequires:	perl(File::ChangeNotify)
 BuildRequires:	perl(File::Copy::Recursive)
+BuildRequires:	perl(File::ShareDir)
 BuildRequires:	perl(Module::Install) >= 0.64
 BuildRequires:	perl(Path::Class) >= 0.09
 BuildRequires:	perl(Template) >= 2.14
+BuildRequires:	perl(Test::More) >= 0.940.0
 BuildRequires:	perl(YAML) >= 0.55
-Requires:	perl >= 5.8.1
+
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
+
+Requires:	perl >= 5.8.1
 
 %description
 Catalyst is an elegant web application framework, extremely flexible yet
