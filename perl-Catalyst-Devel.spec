@@ -15,7 +15,7 @@ Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstr
 BuildRequires:	perl-devel >= 5.8.1
 %endif
 BuildRequires:	perl(Catalyst)
-BuildRequires:	perl(Catalyst::Action::RenderView) >= 0.04
+BuildRequires:	perl(Catalyst::Action::RenderView)     >= 0.04
 BuildRequires:	perl(Catalyst::Plugin::ConfigLoader)
 BuildRequires:	perl(Catalyst::Plugin::Static::Simple) >= 0.14
 BuildRequires:	perl(Class::Accessor::Fast)
@@ -23,11 +23,12 @@ BuildRequires:	perl(Config::General)
 BuildRequires:	perl(File::ChangeNotify)
 BuildRequires:	perl(File::Copy::Recursive)
 BuildRequires:	perl(File::ShareDir)
-BuildRequires:	perl(Module::Install) >= 0.64
-BuildRequires:	perl(Path::Class) >= 0.09
-BuildRequires:	perl(Template) >= 2.14
-BuildRequires:	perl(Test::More) >= 0.940.0
-BuildRequires:	perl(YAML) >= 0.55
+BuildRequires:	perl(Module::Install)  >= 0.64
+BuildRequires:	perl(Path::Class)      >= 0.09
+BuildRequires:	perl(Template)         >= 2.14
+BuildRequires:	perl(Test::Exception)
+BuildRequires:	perl(Test::More)       >= 0.940.0
+BuildRequires:	perl(YAML)             >= 0.55
 
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
