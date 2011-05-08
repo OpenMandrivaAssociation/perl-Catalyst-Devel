@@ -1,5 +1,5 @@
 %define	upstream_name	 Catalyst-Devel
-%define upstream_version 1.31
+%define upstream_version 1.33
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
