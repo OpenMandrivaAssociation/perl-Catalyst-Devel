@@ -28,6 +28,7 @@ BuildRequires:	perl(Path::Class)      >= 0.09
 BuildRequires:	perl(Template)         >= 2.14
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::More)       >= 0.940.0
+BuildRequires:	perl-Test-Simple
 BuildRequires:	perl(YAML)             >= 0.55
 
 BuildArch:	noarch
