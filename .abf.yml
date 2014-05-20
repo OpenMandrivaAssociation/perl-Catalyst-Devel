@@ -1,2 +1,4 @@
+removed_sources:
+  Catalyst-Devel-1.33.tar.gz: 043b8edd897c054fffbc5213ce722ac7eafedeb4
 sources:
-  "Catalyst-Devel-1.33.tar.gz": 043b8edd897c054fffbc5213ce722ac7eafedeb4
+  Catalyst-Devel-1.39.tar.gz: bdd16ebdbbaa424ece32ff46f9ba726a44a0b1a7
