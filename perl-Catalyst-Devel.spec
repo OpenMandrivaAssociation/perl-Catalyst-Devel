@@ -13,6 +13,8 @@ URL:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Text::Glob)
+BuildRequires: perl(Test::Tester)
 BuildRequires:	perl(Catalyst)
 BuildRequires:	perl(Catalyst::Action::RenderView)     >= 0.04
 BuildRequires:	perl(Catalyst::Plugin::ConfigLoader)
