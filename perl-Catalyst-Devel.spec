@@ -1,15 +1,15 @@
 %define	upstream_name	 Catalyst-Devel
-%define upstream_version 1.33
+%define upstream_version 1.42
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Catalyst Development Tools
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://dev.catalyst.perl.org
+Source0:	https://cpan.metacpan.org/authors/id/H/HA/HAARG/Catalyst-Devel-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
