@@ -1,15 +1,13 @@
 %define	upstream_name	 Catalyst-Devel
-%define upstream_version 1.42
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.42
+Release:	2
 
 Summary:	Catalyst Development Tools
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:		https://dev.catalyst.perl.org
-Source0:	https://cpan.metacpan.org/authors/id/H/HA/HAARG/Catalyst-Devel-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/H/HA/HAARG/Catalyst-Devel-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -41,7 +39,7 @@ This package provides Catalyst development tools.
 
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 # jq - should be removed when 5.10.1 is out
@@ -109,9 +107,7 @@ make test
 * Wed Jul 08 2009 Jérôme Quelin <jquelin@mandriva.org> 1.190.0-1mdv2010.0
 + Revision: 393646
 - updating to 1.19 for real this time
-- using %%perl_convert_version
-
-* Tue Jun 30 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.19-1mdv2010.0
+- using %1.42 Tue Jun 30 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.19-1mdv2010.0
 + Revision: 390833
 - update to new version 1.19
 
